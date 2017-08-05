@@ -1,0 +1,55 @@
+{% extends 'main/master.html' %}
+{% load static %}
+{% block title %}Inicio{% endblock %}
+{% block header_content%}
+
+<div class="jumbotron index" >
+	<div class="container">
+		<div class="row">
+			
+		<h2 class="text-right">Mi nombre es Joshua.</h2>
+		<br>
+		<h4 class="quote">"La condición de la existencia racional es no entrar en una contradicción; la de la existencia real es precisamente entrar en ella." - Pêro Botelho</h4>
+	</div>
+		
+	</div>
+</div>
+<hr class="index-line">
+{% endblock %}
+
+{% block content%}
+<div class="row">
+	<div class="col-md-3">
+		<h2>Formación</h2>
+		<p> Estudié Ingeniería en Electrónica y Comunicaciones en la Universidad La Salle. </p>
+		<p>Tengo también más de la mitad de los créditos de una Licenciatura en Matemáticas en la UNAM, pausada.</p>
+		<p>Y he hecho una que otra cosa.</p>
+		<p><a class="btn btn-default" href="{% url 'academia' %}" role="button">Más información &raquo;</a></p>
+	</div>
+	<div class="col-md-3">
+		<h2>Desarrollo</h2>
+		<p>Además de lo que he aprendido en la escuela, he tenido experiencia con otras tecnologías: sistemas operativos, desarrollo web, entre otros. Preparé algunos ejemplos (incluyendo esta página) para poder mostrarlo. </p>
+		<p><a class="btn btn-default" href="{% url 'dev' %}" role="button">Ver ejemplos &raquo;</a></p>
+	</div>
+	<div class="col-md-3">
+		<h2>Entretenimiento</h2>
+		<p>Me gustan los árboles, las matemáticas, disfruto de leer, contemplar, pensar y jugar.</p>
+		<p>Me encanta el circo, hago malabares, ando en monociclo y practico danza aérea.</p>
+		<p><a class="btn btn-default" href="{% url 'fun' %}" role="button">Fotos, pensamientos y demás&raquo;</a></p>
+	</div>
+	<div class="col-md-3">
+		<h2>Contacto</h2>
+		<p> Si te puedo ayudar en algo, contáctame:</p>
+		<ul>
+			<li>(+52 1)55 3668 3675</li>
+			<li><a href="mailto:oojoshuaa@gmail.com">oojoshuaa@gmail.com</a></li>
+			<li><a href="https://www.linkedin.com/in/joshua-martínez-941668145/">LinkedIn</a></li> 
+		</ul>
+		<p>O si lo prefieres, por esta plataforma.</p>
+		<p><a class="btn btn-default" href="{% url 'contact' %}" role="button">Mándame un mensaje &raquo;</a></p>
+	</div>
+</div>
+<div class="row">
+	<h4 class="text-center">O puedes consultar aquí mi <a href="{% static 'main/files/cv_Joshua_Martínez.pdf' %}">CV</a></h4>
+</div>
+{% endblock %}

@@ -1,0 +1,175 @@
+@font-face
+{
+	font-family:"Ubuntu";
+	src: url(Ubuntu-R.ttf);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: "Ubuntu";
+  font-size: 13px;
+/*  background-color: #F2F3AE;*/
+}
+
+
+
+.jumbotron .quote
+{
+	text-align: right;
+	margin-bottom:0;
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+.jumbotron img
+{
+	border: solid white;
+}
+
+.main-title
+{
+	margin-top:3%;
+	padding-top:11px;
+}
+
+.main-title .jumbotron
+{
+	margin-bottom: 0px;
+}
+/*
+.index-line
+{
+	margin-top:0px;
+	border-top:6px solid #4FD5D6;
+	border-bottom:4px solid #400D12;
+}
+
+
+.jumbotron.index
+{
+	background-color: #0E8A84;
+	color:#400D12;
+}
+.jumbotron.index a 
+{
+	color:#4FD5D6;
+}
+*/
+
+.index-line
+{
+	margin-top:0px;
+	border-top:6px solid #282726;
+	border-bottom:4px solid #563838;
+}
+.jumbotron.index
+{
+	/*background-color: #141311;*/
+	background-color: #6A8A82;
+	color:#FEFEFD;
+}
+.jumbotron.index a 
+{
+	color:#4FD5D6;
+}
+
+
+/**/
+.academia-line
+{
+	margin-top:0px;
+	border-top:6px solid #A7414A;
+	border-bottom:4px solid #563838;
+}
+
+.jumbotron.academia
+{
+	background-color: #A37C27;
+	color:#FEFEFD;
+}
+/**/
+.dev-line
+{
+	margin-top:0px;
+	border-top:6px solid #8C489F;
+	border-bottom:4px solid #563838;
+}
+
+.jumbotron.dev
+{
+	background-color: #443266;
+	color:#F1F0FF;
+}
+/**/
+.fun-line
+{
+	margin-top:0px;
+	border-top:6px solid #282726;
+	border-bottom:4px solid #400D12;
+}
+
+.jumbotron.fun
+{
+	background-color: #A7414A;
+	color:#F7DCB4;
+}
+/**/
+.contact-line
+{
+	margin-top:0px;
+	border-top:6px solid #6A8A82;
+	border-bottom:4px solid #563838;
+}
+
+.jumbotron.contact
+{
+	background-color: #282726;
+	color:#FEFEFD;
+}
+/**/
+.navbar
+{
+/*  background-color: #400D12;*/
+	background-color: #563838;
+}
+
+.navbar-default .navbar-nav>li>a
+{
+	color:beige;
+}
+.navbar-default .navbar-nav>li>a:hover
+{
+	color:white;
+}
+
+.navbar-default .navbar-brand
+{
+	color:beige;
+	font-weight: bold;
+}
+
+
+.carousel {
+  /*height: 500px;*/
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  /*height: 500px;*/
+  height:50%;
+  background-color: #000000;
+}
+.carousel-inner > .item > img {
+  /*margin: auto;*/
+  /*border:white 20px;*/
+}

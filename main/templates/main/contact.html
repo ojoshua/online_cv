@@ -1,0 +1,48 @@
+{% extends 'main/master.html' %}
+{% block title %}Contacto{% endblock %}
+{% block header_content%}
+<div class="jumbotron contact">
+	<div class="container">
+		<h2>Contáctame</h2>
+		<h4 class="quote">"El aburrimiento es la raíz de todo mal, el desesperado rechazo de ser uno mismo." - Søren Kierkegaard</h4>
+	</div>
+</div>
+<hr class="contact-line">
+{% endblock %}
+
+{% block content%}
+<div class="row">
+	<div class="col-md-6">
+		
+		<p>Si crees que te puedo ayudar en algo, déjame saberlo. Me puedes contactar por estos medios:</p>
+		<ul>
+			<li>(+52 1)55 3668 3675</li>
+			<li><a href="mailto:oojoshuaa@gmail.com">oojoshuaa@gmail.com</a></li>
+			<li><a href="https://www.linkedin.com/in/joshua-martínez-941668145/">LinkedIn</a></li> 
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<p>O si prefieres por esta plataforma:</p>
+		<div class="panel panel-default">
+
+			<div class="panel-heading">Mensajes</div>
+			<div class="panel-body">
+				<form action="{% url 'message' %}" method="post" class="form-group">
+					{% csrf_token %}
+					{% if sent%}
+					<div class="alert alert-success">
+					<p>Tu mensaje ha sido enviado</p>
+					</div>
+					{% endif %}
+					<label>Nombre</label><input name= "sender" type="text" placeholder="Nombre" class="form-control"/>
+					<label>Tu número o correo</label><input name="contact_info" type="text" placeholder="¿Cómo te contacto de vuelta?" class="form-control"/>
+					<label>Tu mensaje</label><textarea name="content" class="form-control" placeholder="¿En qué te puedo ayudar?"></textarea> 
+					<input type="submit" value="Mándalo" class="btn btn-lg btn-primary pull-right"/>
+				</form>
+
+			</div>
+		
+		</div>
+	</div>
+</div>
+{% endblock %}

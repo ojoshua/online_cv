@@ -1,0 +1,41 @@
+{% extends 'main/master.html' %}
+{% block title %}Desarrollo{% endblock %}
+{% block header_content%}
+<div class="jumbotron dev">
+	<div class="container">
+		<h2>Desarrollo</h2>
+		<h4 class="quote">"El tiempo y el espacio... No es la naturaleza la que nos los impone, somos nosotros quienes se los imponemos a la naturaleza porque lo encontramos conveniente." - Henri Poincaré</h4>
+	</div>
+</div>
+<hr class="dev-line">
+{% endblock %}
+
+{% block content%}
+
+<h3 class="text-danger text-right">Sección en construcción.</h3>
+<p>En la escuela aprendí varias habilidades técnicas y a usar software y lenguajes de programación como: C, C++, Matlab, R, Python, LabVIEW, microcontroladores de Microchip, VHDL, PLC, Arduino, Eagle, Multisim, LaTeX, entre otros.</p>
+<p>Pero además, siempre me han encantado las computadoras y tengo experiencia con una que otra tecnología. He aprendido mucho de computadoras, en todos los niveles que he podido, desde la arquitectura, sistemas operativos, lenguajes de programación con distintos propósitos, paradigmas y patrones de diseño, algoritmos, comunicaciones y desarrollo web.</p>
+<p>Así que esta página iré poniendo algunos ejemplos de eso.</p>
+<p> En cada ejemplo listo que habilidades muestra, el nombre del ejemplo y una breve descripción. Al ir a la página de más detalles podrán ver una descripción más técnica, los links al código (repositorios de Git) y si aplica el link al ejemplo.</p>
+
+<div class="row">
+	{% for category in categories %}
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">{{ category.name }}</h3>
+		</div>
+		<div class="panel-body">
+ 			{% for demo in category.demo_set.all %}
+ 			<div class="row">
+ 				<div class="col-md-2">{{ demo.of_what }}</div>
+ 				<div class="col-md-2"><h4>{{ demo.name }}</h4></div>
+ 				<div class="col-md-6">{{ demo.brief_description | safe }}</div>
+ 				<div class="col-md-2"><a href="{% url 'demo' demo.id %}" class="btn btn-lg btn-default">Más detalles</a></div>
+ 			</div>
+ 			<hr/>
+ 			{% endfor %}
+		</div>
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}

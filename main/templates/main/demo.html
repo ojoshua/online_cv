@@ -1,0 +1,36 @@
+{% extends 'main/master.html' %}
+{% block title %}Desarrollo{% endblock %}
+{% block header_content%}
+<div class="container">
+	<h1 class="text-center">{{ demo.name }}</h1>	
+</div>
+
+<hr class="dev-line">
+{% endblock %}
+
+{% block content%}
+
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 style="display: inline;">Habilidades mostradas: </h4>{{ demo.of_what }}
+		</div>
+		<div class="panel-body">
+			{{ demo.long_description | safe }}
+				<div class="row">
+				<a href="{% url 'dev' %}" class="btn btn-primary">Volver a ejemplos</a>
+
+				</div>
+			</div>
+	</div>
+					{% if demo.url %}
+				<hr>
+				<a href="{{ demo.url }}" class="btn btn-primary" style="width:100%;">Mira el ejemplo en una pantalla independiente</a>
+				<div class="embed-responsive embed-responsive-4by3" style="border: solid;">
+					<iframe class="embed-responsive-item" src="{{ demo.url }}"></iframe>
+
+				</div>
+				{% endif %}
+	
+</div>
+{% endblock %}

@@ -1,0 +1,252 @@
+{% extends 'main/master.html' %}
+{% load static %}
+{% block title %}Formación y experiencia{% endblock %}
+{% block header_content%}
+<div class="jumbotron academia">
+	<div class="container">
+		<h2>Formación y experiencia</h2>
+		<h4 class="quote">"Sospecho, sin embargo, que no era muy capaz de pensar. Pensar es olvidar diferencias, es generalizar, abstraer. En el abarrotado mundo de Funes no había sino detalles, casi inmediatos." - J. L. Borges</h4>
+	</div>
+</div>
+<hr class="academia-line">
+{% endblock %}
+
+{% block content%}
+<div class="row">
+	<h3>Aptitudes Generales</h3>
+	<p>Pienso en mi como alguien:</p>
+	<div class="col-md-4">
+		<ul>
+			<li><p>Honesto</p></li>
+			<li><p>Responsable</p></li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<ul>
+			<li><p>Autodidacta</p></li>
+			<li><p>Puntual</p></li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<ul>
+			<li><p>De rápido aprendizaje</p></li>
+			<li><p>Que sabe trabajar en equipo</p></li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-6">
+		<h3>Formación académica</h3>
+		<div class="row">
+			<div class="col-md-2">2012-2016</div>
+			<div class="col-md-10">Ingeniería en Electrónica y Comunicaciones. Universidad La Salle. Titulado con mención honorífica, cédula: 10302413</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">2014-Hoy</div>
+			<div class="col-md-10">Licenciatura en Matemáticas. UNAM. <b>Pasante</b>.</div>
+		</div>
+		
+	</div>
+	<div class="col-md-6">
+		<h3>Idiomas</h3>
+		<ul>
+			<li><p>Inglés. Avanzado. Hice el TOEFL/ITP en el 2010 con 590/677.</p></li>
+			<li><p>Alemán. Básico.</p></li>
+		</ul>
+	</div>
+</div>
+<h3>Experiencia Profesional</h3>
+<div class="row">
+	<div class="col-md-1">2015</div>
+	<div class="col-md-11"><h4>Interno de investigación en la ÉTS (Escuela de Tecnología Superior) Montreal, Canadá.</h4> Estancia de investigación en el verano de 3 meses, parte del programa MITACS. Investigué y programé algoritmos de estimación de disparidad en Matlab, después implementé partes del algoritmo en C/CUDA con GPUs de NVIDIA.</div>
+</div>
+<h3>Formación extra académica</h3>
+<div class="row">
+	<div class="col-md-1">2016</div>
+	<div class="col-md-11"><p>Participación en el 3er concurso de ciencias básicas de la Asociación Nacional de Facultades y Escuelas de Ingeniería (ANFEI). Ronda de finalistas.</p></div>
+</div>
+<div class="row">
+	<div class="col-md-1">2015</div>
+	<div class="col-md-11"><p>Participación en el concurso IEEEXtreme Programming Competition. Concurso de programación de 24 horas.Entre los primeros diez en el ranking de México.</p></div>
+</div>
+<div class="row">
+	<div class="col-md-1">2014</div>
+	<div class="col-md-11"><p>Participación en el concurso IEEEXtreme Programming Competition.</p></div>
+</div>
+<div class="row">
+	<div class="col-md-1">2014</div>
+	<div class="col-md-11"><p>Participación en el 1er concurso de ciencias básicas de la ANFEI. </p></div>
+</div>
+<div class="row">
+	<div class="col-md-1">2010-2014</div>
+	<div class="col-md-11">
+		<p>Miembro del equipo de robótica móvil Cyberlords de la Universidad La Salle. En el que programé, diseñé circuitos, entre otras actividades. Como parte del equipo, participé en los siguientes eventos:</p>
+	<ul>
+		<li>2013. Escuela de Invierno de Robótica. En el INAOE, Puebla.</li>
+		<li>2013. TMR en el ITESM (Puebla). Primer lugar en la categoría Humanoid Kid-Size</li>
+		<li>2012. Robocup World Cup en la ciudad de México.</li>
+		<li>2012. TMR en el ITESM (Edo. de México). Se obtuvo primer lugar en Humanoid Kid-Size</li>
+		<li>2011. Robocup World Cup en Estambul, Turquía.</li>
+		<li>2011. Torneo Mexicano de Robótica (TMR) en el ITAM. Primeros lugares en Soccer Jr., Humanoid Kid-Size</li>
+	</ul>
+	</div>
+</div>
+<h3>Reconocimientos</h3>
+<div class="row">
+	<div class="col-md-1">2017</div>
+	<div class="col-md-11"><p>Medalla Hermano Miguel de la ULSA. Mejor promedio de la carrera. </p></div>
+</div>
+<div class="row">
+	<div class="col-md-1">2017</div>
+	<div class="col-md-11"><p>Reconocimiento de la ANFEI. Mejor promedio de la facultad. </p></div>
+</div>
+<div class="row">
+	<div class="col-md-1">2015</div>
+	<div class="col-md-11"><p>Premio del CUE de la ULSA. Excelencia Académica </p></div>
+</div>
+
+<div id="academiaCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#academiaCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#academiaCarousel" data-slide-to="1"></li>
+		<li data-target="#academiaCarousel" data-slide-to="2"></li>
+		<li data-target="#academiaCarousel" data-slide-to="3"></li>
+		<li data-target="#academiaCarousel" data-slide-to="4"></li>
+		<li data-target="#academiaCarousel" data-slide-to="5"></li>
+		<li data-target="#academiaCarousel" data-slide-to="6"></li>
+		<li data-target="#academiaCarousel" data-slide-to="7"></li>
+		<li data-target="#academiaCarousel" data-slide-to="8"></li>
+		<li data-target="#academiaCarousel" data-slide-to="9"></li>
+		<li data-target="#academiaCarousel" data-slide-to="10"></li>
+		<li data-target="#academiaCarousel" data-slide-to="11"></li>
+		<li data-target="#academiaCarousel" data-slide-to="12"></li>
+		<li data-target="#academiaCarousel" data-slide-to="13"></li>
+		<li data-target="#academiaCarousel" data-slide-to="14"></li>
+		<li data-target="#academiaCarousel" data-slide-to="15"></li>
+	</ol>
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/01.jpg' %}" alt="First slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/02.jpg' %}" alt="Second slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/03.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/04.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/05.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/06.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/07.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/08.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/09.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/10.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/11.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/12.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/13.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/14.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/15.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="img-responsive center-block" src="{% static 'main/images/academia/16.jpg' %}" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+	</div>
+	<a class="left carousel-control" href="#academiaCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#academiaCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+
+{% endblock %}
